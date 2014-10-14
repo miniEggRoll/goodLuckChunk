@@ -1,9 +1,14 @@
 {Transform} = require 'stream'
 
-class chuck extends Transform
+class chunk extends Transform
     constructor: ->
+        super
         @buff = new Buffer(0)
-    _transform: (chunk)->
-        Buffer.concat [@buff, chunk], 2
-    _flush: ->
+    _transform: (chunk, encoding, done)->
+        @buff = Buffer.concat [@buff, chunk]
+        do done
+    _flush: (done)->
         @push @buff
+        do done
+
+exports.chunk = chunk

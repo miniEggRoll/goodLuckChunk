@@ -1,15 +1,19 @@
 {
-  "name": "goodLuckChuck",
+  "name": "goodLuckChunk",
   "version": "0.1.0",
   "description": "concat and pass node stream chunk",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "coffee -o lib/ -c src/"
   },
   "keywords": [
     "stream",
     "chunk"
   ],
   "author": "Aaron",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.8.0"
+  }
 }
