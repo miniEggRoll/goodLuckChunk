@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mrsquid0126/goodLuckChunk.svg)](https://travis-ci.org/mrsquid0126/goodLuckChunk)
+
 goodLuckChunk
 =============
 
