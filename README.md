@@ -29,13 +29,3 @@ fs.createReadStream 'sample.txt'
     console.log data.toString('utf8')
 
 ```
-
-- for object mode
-
-```
-fs.createReadStream 'sample.json'
-.pipe parse
-.pipe new chunk()
-.on 'data', (data)->
-    console.log data
-```
